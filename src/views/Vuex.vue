@@ -12,15 +12,15 @@
 export default {
     computed: {
         names() {
-            return this.$store.state.data.name
+            return this.$store.state.a.data.name
         },
         counter() {
-            return this.$store.state.data.count
+            return this.$store.state.a.data.count
         }
     },
     methods: {
         increments() {
-            this.$store.commit('increment')
+            this.$store.commit('a/increment')
         }
     }
 }
